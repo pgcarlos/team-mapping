@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados - Team Mapping</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <span class="nav-logo">Team Mapping</span>
+        </div>
+
+        <div class="nav-right">
+            <a href="index.html">Inicio</a>
+            <a href="preguntas.html">Preguntas</a>
+            <a href="resultados.html">Resultados</a>
+        </div>
+    </nav>
+
+    <header class="header fade-in">
+        <h1 class="title">Resultados del Análisis</h1>
+
+        <!-- SALUDO PERSONALIZADO -->
+        <p class="subtitle" id="saludo-personalizado"></p>
+        <p class="analysis-date" id="analysis-date"></p>
+
+    </header>
+
+    <section class="result-section">
+
+        <div class="result-card slide-up delay-1">
+            <h2 id="habilidad-dominante">Habilidad dominante:</h2>
+            <p id="explicacion" class="explanation"></p>
+        </div>
+
+        <div class="score-card slide-up delay-2">
+            <h3>Puntuaciones detectadas</h3>
+            <ul id="lista-puntuaciones"></ul>
+        </div>
+
+        <div class="per-question-section slide-up delay-3">
+            <h2>Análisis por pregunta</h2>
+
+            <div class="per-question-card">
+                <h3>Pregunta 1</h3>
+                <p id="p1-resumen"></p>
+            </div>
+
+            <div class="per-question-card">
+                <h3>Pregunta 2</h3>
+                <p id="p2-resumen"></p>
+            </div>
+
+            <div class="per-question-card">
+                <h3>Pregunta 3</h3>
+                <p id="p3-resumen"></p>
+            </div>
+
+            <div class="per-question-card">
+                <h3>Pregunta 4</h3>
+                <p id="p4-resumen"></p>
+            </div>
+
+            <div class="per-question-card">
+                <h3>Pregunta 5</h3>
+                <p id="p5-resumen"></p>
+            </div>
+        </div>
+
+        <div class="img-container fade-in delay-4">
+            <img src="img/main.svg" class="result-img">
+        </div>
+
+        <a href="preguntas.html" class="btn-secondary fade-in delay-5">Volver a intentar</a>
+        <a href="index.html" class="btn-primary fade-in delay-5">Volver al inicio</a>
+
+        <div class="prototype-note">
+            <p>
+                <strong>Nota sobre el prototipo:</strong><br>
+                Este análisis forma parte de una versión temprana del sistema Team Mapping.
+                El clasificador utilizado se basa en un modelo heurístico simple basado en palabras clave,
+                por lo que puede generar resultados imprecisos o no detectar habilidades cuando las respuestas
+                no contienen coincidencias literales. Estas limitaciones son esperadas en esta fase del proyecto
+                y se corregirán en la siguiente etapa (TT2) mediante la integración de modelos avanzados de
+                Procesamiento de Lenguaje Natural (NLP), tales como BERT, entrenados con el dataset desarrollado.
+            </p>
+        </div>
+
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

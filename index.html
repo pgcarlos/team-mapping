@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Mapping - Demo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <span class="nav-logo">Team Mapping</span>
+        </div>
+
+        <div class="nav-right">
+            <a href="index.html">Inicio</a>
+            <a href="preguntas.html">Preguntas</a>
+            <a href="resultados.html">Resultados</a>
+        </div>
+    </nav>
+
+    <header class="header fade-in">
+        <h1 class="title">Team Mapping</h1>
+        <p class="subtitle">Prototipo web - Evaluación de habilidades</p>
+    </header>
+
+    <section class="hero slide-up delay-1">
+        <img src="img/main.svg" alt="Ilustración principal" class="hero-img">
+
+        <div class="hero-content">
+            <h2>Bienvenido(a)</h2>
+            <p>
+                Antes de comenzar, por favor ingresa tu nombre para personalizar tu análisis.
+            </p>
+
+            <!-- NUEVO CAMPO PARA NOMBRE -->
+            <div class="name-input-container fade-in delay-2">
+                <label for="nombreUsuario" class="name-label">Nombre completo:</label>
+                <input type="text" id="nombreUsuario" class="name-input" placeholder="Ej. Carlos Palacios">
+            </div>
+
+            <!-- BOTÓN ACTUALIZADO -->
+            <a href="preguntas.html" class="btn-primary" onclick="guardarNombre(event)">Iniciar prueba</a>
+        </div>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

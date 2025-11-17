@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas - Team Mapping</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <span class="nav-logo">Team Mapping</span>
+        </div>
+
+        <div class="nav-right">
+            <a href="index.html">Inicio</a>
+            <a href="preguntas.html">Preguntas</a>
+            <a href="resultados.html">Resultados</a>
+        </div>
+    </nav>
+
+    <header class="header fade-in">
+        <h1 class="title">Preguntas</h1>
+        <p class="subtitle">Responde sinceramente las siguientes preguntas.</p>
+    </header>
+
+    <section class="form-section">
+
+        <div class="question-card slide-up delay-1">
+            <h3>1. ¿Cómo manejas una situación difícil con tu equipo?</h3>
+            <textarea id="respuesta1" placeholder="Escribe tu respuesta aquí..."></textarea>
+        </div>
+
+        <div class="question-card slide-up delay-2">
+            <h3>2. Describe un momento en el que tuviste que tomar una decisión importante.</h3>
+            <textarea id="respuesta2" placeholder="Escribe tu respuesta aquí..."></textarea>
+        </div>
+
+        <div class="question-card slide-up delay-3">
+            <h3>3. ¿Cómo sueles resolver un problema complejo?</h3>
+            <textarea id="respuesta3" placeholder="Escribe tu respuesta aquí..."></textarea>
+        </div>
+
+        <div class="question-card slide-up delay-4">
+            <h3>4. ¿Cómo manejas una situación en la que alguien no está cumpliendo con su trabajo?</h3>
+            <textarea id="respuesta4" placeholder="Escribe tu respuesta aquí..."></textarea>
+        </div>
+
+        <div class="question-card slide-up delay-5">
+            <h3>5. Describe un caso donde tuviste que resolver algo sin tener toda la información.</h3>
+            <textarea id="respuesta5" placeholder="Escribe tu respuesta aquí..."></textarea>
+        </div>
+
+        <button class="btn-primary" onclick="analizarRespuestas()">
+            Analizar respuestas
+        </button>
+
+    </section>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>

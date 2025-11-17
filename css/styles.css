@@ -1,0 +1,550 @@
+/* -------------------------------
+   STARTUP CLEAN – 2025 DESIGN
+   Paleta profesional y moderna
+--------------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    --primary: #4F46E5;
+    --primary-light: #6366F1;
+    --secondary: #6b7280;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --bg: #f8fafc;
+    --white: #ffffff;
+
+    --radius: 12px;
+    --shadow: 0 4px 16px rgba(0,0,0,0.06);
+    --shadow-soft: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* -------------------------------
+   BASE
+--------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text-dark);
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+/* -------------------------------
+   NAVBAR
+--------------------------------- */
+
+.navbar {
+    width: 100%;
+    background: var(--white);
+    padding: 15px 40px;
+    box-shadow: var(--shadow-soft);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.nav-logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.nav-right a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 500;
+    transition: 0.2s ease;
+    font-size: 0.95rem;
+}
+
+.nav-right a:hover {
+    color: var(--primary-light);
+}
+
+/* -------------------------------
+   HEADER TITLES
+--------------------------------- */
+
+.header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-top: 5px;
+}
+
+/* -------------------------------
+   HERO SECTION
+--------------------------------- */
+
+.hero {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-img {
+    width: 45%;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero-content h2 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.05rem;
+    color: var(--text-light);
+    margin-bottom: 28px;
+}
+
+/* -------------------------------
+   BUTTONS
+--------------------------------- */
+
+.btn-primary {
+    display: inline-block;
+    background: var(--primary);
+    padding: 13px 26px;
+    border-radius: var(--radius);
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: var(--primary-light);
+}
+
+.btn-secondary {
+    display: inline-block;
+    background: var(--secondary);
+    padding: 13px 26px;
+    border-radius: var(--radius);
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background: #4b5563;
+}
+
+/* -------------------------------
+   FORM QUESTIONS
+--------------------------------- */
+
+.form-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.question-card {
+    background: white;
+    padding: 25px 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 25px;
+}
+
+.question-card h3 {
+    margin-bottom: 12px;
+}
+
+.question-card textarea {
+    width: 100%;
+    height: 120px;
+    border: 1.5px solid #d1d5db;
+    border-radius: var(--radius);
+    padding: 12px;
+    resize: none;
+    outline: none;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+.question-card textarea:focus {
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.2);
+}
+
+/* -------------------------------
+   RESULTADOS
+--------------------------------- */
+
+.result-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.result-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 25px;
+}
+
+.score-card {
+    background: var(--white);
+    padding: 25px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 35px;
+}
+
+.score-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.score-card li {
+    background: #f1f5f9;
+    margin: 10px auto;
+    padding: 12px 18px;
+    width: 70%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-soft);
+}
+
+/* -------------------------------
+   PER QUESTION ANALYSIS
+--------------------------------- */
+
+.per-question-section {
+    background: var(--white);
+    padding: 25px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+.per-question-card {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: var(--radius);
+    margin-bottom: 15px;
+    box-shadow: var(--shadow-soft);
+}
+
+/* -------------------------------
+   IMAGES
+--------------------------------- */
+
+.result-img {
+    width: 40%;
+    max-width: 300px;
+    opacity: 0.95;
+}
+
+/* -------------------------------
+   ANIMACIONES (que ya tenías)
+--------------------------------- */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInAnimation 0.7s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: slideUpAnimation 0.8s ease forwards;
+}
+
+@keyframes slideUpAnimation {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.delay-1 { animation-delay: 0.15s; }
+.delay-2 { animation-delay: 0.30s; }
+.delay-3 { animation-delay: 0.45s; }
+.delay-4 { animation-delay: 0.60s; }
+.delay-5 { animation-delay: 0.75s; }
+
+
+/* ------------------------------------------------
+   RESPONSIVE DESIGN – Celulares y Tablets
+--------------------------------------------------- */
+
+/* Tablets vertical y pantallas medianas */
+@media (max-width: 992px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img {
+        width: 70%;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .result-img {
+        width: 50%;
+    }
+
+    .score-card li {
+        width: 85%;
+    }
+}
+
+/* Tablets pequeñas y celulares grandes */
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .nav-right a {
+        margin-left: 12px;
+    }
+
+    .hero-img {
+        width: 80%;
+    }
+
+    .question-card {
+        padding: 20px;
+    }
+
+    .result-card,
+    .score-card,
+    .per-question-section {
+        padding: 20px;
+    }
+
+    .result-img {
+        width: 60%;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Celulares pequeños (iPhone SE, Android pequeños) */
+@media (max-width: 480px) {
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .hero-img {
+        width: 100%;
+    }
+
+    .per-question-card {
+        padding: 15px;
+    }
+
+    .result-img {
+        width: 75%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .nav-right {
+        margin-top: 10px;
+    }
+
+    .nav-right a {
+        margin-left: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+.prototype-note {
+    margin-top: 40px;
+    background: #f1f5f9;
+    padding: 20px;
+    border-radius: 12px;
+    color: #475569;
+    font-size: 0.95rem;
+    border-left: 5px solid #6366F1;
+}
+
+/* -----------------------------------------
+   INPUT DE NOMBRE (INDEX)
+----------------------------------------- */
+
+.name-input-container {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+}
+
+.name-label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.name-input {
+    padding: 12px 14px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 100%;
+    background: white;
+    color: var(--text-dark);
+    transition: 0.2s ease;
+}
+
+.name-input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.2);
+    outline: none;
+}
+/* -----------------------------------------
+   BARRAS DE PROGRESO (Estilo A - SaaS)
+----------------------------------------- */
+
+.score-item {
+    background: #f1f5f9;
+    margin: 10px auto;
+    padding: 12px 18px;
+    width: 80%;
+    border-radius: 999px;
+    box-shadow: var(--shadow-soft);
+    text-align: left;
+}
+
+.score-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+.score-label {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.score-value {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.score-bar {
+    width: 100%;
+    height: 8px;
+    border-radius: 999px;
+    background: #e2e8f0;
+    overflow: hidden;
+}
+
+.score-bar-fill {
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #4F46E5, #6366F1);
+    width: 0%;
+    transition: width 0.9s ease-out;
+}
+
+/* -----------------------------------------
+   FECHA DEL ANÁLISIS
+----------------------------------------- */
+
+.analysis-date {
+    margin-top: 4px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* -----------------------------------------
+   MICROTRANSICIONES (hover suave)
+----------------------------------------- */
+
+.result-card,
+.score-card,
+.per-question-section,
+.per-question-card {
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.result-card:hover,
+.score-card:hover,
+.per-question-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.10);
+}
+
+/* Scroll suave por si no lo tienes aún */
+html {
+    scroll-behavior: smooth;
+}
